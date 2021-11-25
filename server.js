@@ -12,7 +12,7 @@ connectDB();
 
 
 app.use(cors({
-    origin: process.env.ALLOWED_CLIENTS.split(',')
+    origin: "'http://localhost:3300', 'http://localhost:5000'"
 }));
 
 
