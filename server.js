@@ -1,22 +1,22 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3000;
 const path = require('path');
 const cors = require('cors');
-// Cors 
-const corsOptions = {
-  origin: process.env.ALLOWED_CLIENTS.split(',')
-}
 
-app.use(cors(corsOptions))
+const PORT = process.env.PORT || 3000;
 app.use(express.static('public'));
-
+app.use(express.json());
 const connectDB = require('./config/db');
 connectDB();
 
-app.use(express.json());
+// Cors
+const crsOptions = {
+    origin: process.env.ALLOWED_CLIENTS.split(',')
+}
+app.use(cors(corsOptions));
 
+// Templates
 app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
 
