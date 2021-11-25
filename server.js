@@ -12,7 +12,7 @@ connectDB();
 
 
 app.use(cors({
-    origin: process.env.ALLOWED_CLIENTS.split(",")
+    origin: process.env.ALLOWED_CLIENTS.split(',')
 }));
 
 
