@@ -10,11 +10,11 @@ app.use(express.json());
 const connectDB = require('./config/db');
 connectDB();
 
-// Cors
-const crsOptions = {
+
+app.use(cors({
     origin: process.env.ALLOWED_CLIENTS.split(',')
-}
-app.use(cors(corsOptions));
+}));
+
 
 // Templates
 app.set('views', path.join(__dirname, '/views'));
