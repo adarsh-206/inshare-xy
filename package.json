@@ -14,9 +14,9 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
+    "start": "node server.js"
     "dev": "nodemon server.js",
     "server": "node server.js",
-    "start": "node index.html"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
