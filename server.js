@@ -25,5 +25,4 @@ app.use('/api/files', require('./routes/files'));
 app.use('/files', require('./routes/show'));
 app.use('/files/download', require('./routes/download'));
 
-
 app.listen(PORT, console.log(`Listening on port ${PORT}.`));
