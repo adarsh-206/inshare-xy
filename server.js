@@ -23,7 +23,7 @@ app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
 
 // Routes 
-app.use('/', require('./index.html'));
+app.use('/index', require('./index.html'));
 app.use('/api/files', require('./routes/files'));
 app.use('/files', require('./routes/show'));
 app.use('/files/download', require('./routes/download'));
