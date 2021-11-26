@@ -5,7 +5,7 @@ const path = require('path');
 
 app.get('/', function (req, res)
 {
-    res.render('index.html');
+    res.render('index');
 });
 
 const PORT = process.env.PORT || 3000;
