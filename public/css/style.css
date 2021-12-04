@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 
 :root {
     --main-bg-color: #edf5fe;
@@ -14,14 +14,32 @@
     align-items: center;
     justify-content: center;
     color: #333;
-  }
-
-/*   .logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 150px;
   } */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+:root {
+  --main-bg-color: #fefcd3;                        
+  --light-yellow: #F9A826;                           
+  --border-color: #ffeba7;
+  --container-width: 575px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 98vh;
+  overflow: hidden;
+  background-color: #2a2b38;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 150px;
+}
+
 section.download {
     background: #fff;
     width: 430px;
