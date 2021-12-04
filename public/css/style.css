@@ -74,5 +74,6 @@ section.download {
   }
 
   .send-btn-container a:hover {
-      background: var(--dark-blue);
+      background: var(--main-bg-color);
+      color: var(--light-yellow);
   }
