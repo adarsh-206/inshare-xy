@@ -31,6 +31,10 @@ body {
   overflow: hidden;
   background-color: #2a2b38;
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
 }
 
 .logo {
