@@ -54,7 +54,6 @@ section.download {
 }
 .download__icon {
     height: 8rem;
-    background: var(--light-yellow);
 }
 .download__meta h4 {
     margin-bottom: 0;
