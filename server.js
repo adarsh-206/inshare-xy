@@ -11,7 +11,7 @@ connectDB();
 
 const cors = require('cors');
 const corsOptions ={ 
-    origin:'http://localhost:3000',                           /* 'https://techie-adarsh.github.io' */
+    origin:'http://localhost:3001',                           /* 'https://techie-adarsh.github.io' */
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
