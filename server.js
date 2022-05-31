@@ -12,7 +12,7 @@ connectDB();
 const cors = require('cors');
 const corsOptions ={ 
     origin:'https://techie-adarsh.github.io',                           /* 'https://techie-adarsh.github.io' */
-    credentials:false,            //access-control-allow-credentials:true
+    credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
 app.use(cors(corsOptions));
